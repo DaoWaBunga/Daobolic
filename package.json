@@ -1,0 +1,12 @@
+{
+  "name": "ryan",
+  "version": "1.0.0",
+  "description": "Ryan token",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Razerface",
+  "license": "MIT",
+  "keywords": []
+}

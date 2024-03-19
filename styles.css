@@ -1,0 +1,142 @@
+/* Updated CSS for bubble box */
+.bubble-box, .centered-box {
+  background-color: rgb(230, 131, 38);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 20px;
+  font-family: "Comic Sans MS", cursive; /* Replace with a more fitting font family */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 3D effect for the box */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for the text */
+  border-radius: 20px; /* Rounded corners */
+  max-width: 80%; /* Limit width to 80% of the container */
+  margin-left: auto; /* Center the box */
+  margin-right: auto; /* Center the box */
+}
+
+.centered-image-container img {
+  max-width: 33.33%; /* Set the image width to one-third of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Updated CSS for centered image container */
+.centered-image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+body {
+  background-color: rgb(132, 214, 252); /* Light gray background color */
+}
+
+.title {
+  font-size: 128px;
+  text-align: center;
+  color: gold;
+  text-shadow: 0 0 20px blue;
+}
+
+.image-text-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: right;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.buy-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#buyButton {
+  padding: 20px 40px; /* Increase button size */
+  font-size: 24px; /* Increase button font size */
+  background-color: rgb(2, 175, 25); /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block; /* Display as block element */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+#buyButton:hover {
+  background-color: rgb(200, 100, 0); /* Button background color on hover */
+}
+
+.image-container {
+  text-align: center; /* Center align the image */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.centered-box {
+  background-color: rgb(230, 131, 38);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: "Comic Sans MS", cursive; /* Replace with a more fitting font family */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 3D effect for the box */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for the text */
+}
+
+.social-links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 32px; /* Adjust the font size as needed */
+}
+
+/* CSS for scrolling text animation */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.scrolling-text {
+  background-color: rgb(132, 214, 252);
+  color: rgb(0, 0, 0);
+  padding: 64px;
+  text-align: center;
+  white-space: nowrap; /* Use "nowrap" to prevent wrapping */
+  overflow: hidden;
+  position: relative; /* Position relative for absolute positioning of inner div */
+  width: 100%; /* Full width */
+  font-size: 64x; /* Set a font size for better readability */
+}
+
+.scrolling-text div {
+  position: absolute; /* Absolute positioning to move text across */
+  width: 200%; /* Double the width to ensure continuous scrolling */
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); } /* Start at the left edge */
+  100% { transform: translateX(-50%); } /* Scroll to the left by half the width */
+}
+
