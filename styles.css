@@ -37,27 +37,6 @@ body {
   text-shadow: 0 0 20px blue;
 }
 
-.image-text-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.image-container {
-  flex: 1;
-  text-align: right;
-}
-
-.image-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-.text-container {
-  flex: 1;
-  padding: 20px;
-}
-
 .buy-container {
   text-align: center;
   margin-top: 20px;
@@ -77,28 +56,6 @@ body {
 
 #buyButton:hover {
   background-color: rgb(200, 100, 0); /* Button background color on hover */
-}
-
-.image-container {
-  text-align: center; /* Center align the image */
-}
-
-.image-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-.centered-box {
-  background-color: rgb(230, 131, 38);
-  color: rgb(0, 0, 0);
-  padding: 20px;
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 20px;
-  font-family: "Comic Sans MS", cursive; /* Replace with a more fitting font family */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 3D effect for the box */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for the text */
 }
 
 .social-links {
@@ -127,7 +84,7 @@ body {
   overflow: hidden;
   position: relative; /* Position relative for absolute positioning of inner div */
   width: 100%; /* Full width */
-  font-size: 64x; /* Set a font size for better readability */
+  font-size: 64px; /* Set a font size for better readability */
 }
 
 .scrolling-text div {
@@ -140,4 +97,3 @@ body {
   0% { transform: translateX(0); } /* Start at the left edge */
   100% { transform: translateX(-50%); } /* Scroll to the left by half the width */
 }
-
