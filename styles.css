@@ -27,8 +27,11 @@
 }
 
 body {
-  background-color: rgb(145, 40, 40); /* Light gray background color */
+  background-image: url('img/background.png'); /* Path to your image */
+  background-repeat: repeat; /* Adjust how the image repeats if needed */
+  background-size: cover; /* Controls the size of the image */
 }
+
 
 .title {
   font-size: 256px;
