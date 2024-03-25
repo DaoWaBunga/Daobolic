@@ -8,7 +8,7 @@
   margin-bottom: 20px;
   font-family: "Comic Sans MS", cursive; /* Replace with a more fitting font family */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 3D effect for the box */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for the text */
+  text-shadow: 2px 2px 4px rgba(255, 251, 0, 0.3); /* Shadow for the text */
   border-radius: 20px; /* Rounded corners */
   max-width: 80%; /* Limit width to 80% of the container */
   margin-left: auto; /* Center the box */
@@ -46,7 +46,7 @@ body {
 #buyButton {
   padding: 20px 40px; /* Increase button size */
   font-size: 24px; /* Increase button font size */
-  background-color: rgb(2, 175, 25); /* Button background color */
+  background-color: rgb(50, 148, 4); /* Button background color */
   color: white; /* Button text color */
   text-decoration: none; /* Remove underline from link */
   display: inline-block; /* Display as block element */
@@ -55,7 +55,7 @@ body {
 }
 
 #buyButton:hover {
-  background-color: rgb(200, 100, 0); /* Button background color on hover */
+  background-color: rgb(253, 3, 3); /* Button background color on hover */
 }
 
 .gif-container {
