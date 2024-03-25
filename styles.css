@@ -58,6 +58,16 @@ body {
   background-color: rgb(200, 100, 0); /* Button background color on hover */
 }
 
+.gif-container {
+  width: 100%; /* Adjust width as needed */
+  text-align: center;  
+}
+
+.gif-container img {
+  max-width: 100%; /* Make GIF responsive */
+  height: auto;  
+}
+
 .social-links {
   text-align: center;
   margin-bottom: 20px;
