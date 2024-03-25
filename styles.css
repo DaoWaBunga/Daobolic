@@ -1,6 +1,6 @@
 /* Updated CSS for bubble box */
 .bubble-box, .centered-box {
-  background-color: rgb(230, 131, 38);
+  background-color: rgb(226, 85, 85);
   color: rgb(0, 0, 0);
   padding: 20px;
   text-align: center;
@@ -27,14 +27,14 @@
 }
 
 body {
-  background-color: rgb(132, 214, 252); /* Light gray background color */
+  background-color: rgb(145, 40, 40); /* Light gray background color */
 }
 
 .title {
-  font-size: 128px;
+  font-size: 256px;
   text-align: center;
   color: gold;
-  text-shadow: 0 0 20px blue;
+  text-shadow: 0 0 20px rgb(255, 22, 22);
 }
 
 .buy-container {
@@ -86,8 +86,8 @@ body {
   100% { transform: translateX(-100%); }
 }
 .scrolling-text {
-  background-color: rgb(132, 214, 252);
-  color: rgb(0, 0, 0);
+  background-color: rgb(145, 40, 40);
+  color: rgb(255, 255, 255);
   padding: 64px;
   text-align: center;
   white-space: nowrap; /* Use "nowrap" to prevent wrapping */
