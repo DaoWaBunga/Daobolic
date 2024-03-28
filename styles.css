@@ -1,35 +1,32 @@
-/* Updated CSS for bubble box */
-.bubble-box, .centered-box {
-  background-color: rgb(226, 85, 85);
-  color: rgb(0, 0, 0);
+body {
+  background-color: #151226; /* Deep cosmic background */
+  background-image: url('img/background.png'); /* If you still want a background image */
+  background-repeat: repeat; 
+  background-size: cover; 
+  font-family: 'Avenir Next', sans-serif; /* Modern, clean font */
+  color: #f5f0ff; /* Slightly off-white text for readability */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   padding: 20px;
-  text-align: center;
-  font-size: 64px;
-  margin-bottom: 20px;
-  font-family: "Comic Sans MS", cursive; /* Replace with a more fitting font family */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 3D effect for the box */
-  text-shadow: 2px 2px 4px rgba(255, 251, 0, 0.3); /* Shadow for the text */
-  border-radius: 20px; /* Rounded corners */
-  max-width: 80%; /* Limit width to 80% of the container */
-  margin-left: auto; /* Center the box */
-  margin-right: auto; /* Center the box */
 }
 
-.centered-image-container img {
-  max-width: 33.33%; /* Set the image width to one-third of its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Updated CSS for centered image container */
 .centered-image-container {
   text-align: center;
   margin-top: 20px;
+  filter: drop-shadow(0px 0px 10px rgba(255, 220, 0, 0.8)); /* Subtle glow */ 
 }
 
-body {
-  background-image: url('img/background.png'); /* Path to your image */
-  background-repeat: repeat; /* Adjust how the image repeats if needed */
-  background-size: cover; /* Controls the size of the image */
+.centered-image-container img {
+  max-width: 66.66%; 
+  height: auto; 
 }
 
 
@@ -38,6 +35,20 @@ body {
   text-align: center;
   color: gold;
   text-shadow: 0 0 20px rgb(255, 22, 22);
+}
+
+.bubble-box, .centered-box {
+  background: linear-gradient(45deg, rgba(255, 100, 0, 0.9), rgba(200, 0, 150, 0.7)); /* Vibrant gradient */
+  color: #f5f0ff;  /* Off-white text */
+  padding: 20px;
+  text-align: center;
+  font-size: 64px; 
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.5); 
+  border-radius: 15px;
+  max-width: 80%; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .buy-container {
@@ -49,64 +60,68 @@ body {
 #buyButton {
   padding: 20px 40px; /* Increase button size */
   font-size: 24px; /* Increase button font size */
-  background-color: rgb(50, 148, 4); /* Button background color */
-  color: white; /* Button text color */
+  background-color: #FFD000; /* Bold yellow */
+  color: #151226; /* Contrasting dark */
   text-decoration: none; /* Remove underline from link */
   display: inline-block; /* Display as block element */
-  border-radius: 5px; /* Add rounded corners */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow:  0px 0px 20px rgba(255, 255, 0, 0.5); 
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 #buyButton:hover {
-  background-color: rgb(253, 3, 3); /* Button background color on hover */
+  background-color: #ff9000; 
+  cursor: pointer;
 }
 
 .gif-container {
-  width: 100%; /* Adjust width as needed */
-  text-align: center;  
+  width: 100%; 
+  text-align: center;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .gif-container img {
-  max-width: 100%; /* Make GIF responsive */
-  height: auto;  
+  max-width: 100%; 
+  height: auto;
 }
 
 .social-links {
   text-align: center;
+  margin-top: 30px; 
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 300px; 
 }
 
 .social-links a {
-  color: white;
+  color: #ff9000;
   text-decoration: none;
-  margin: 0 10px;
-  font-size: 32px; /* Adjust the font size as needed */
+  font-size: 1.3em;
+  transition: color 0.3s ease; 
 }
 
-/* CSS for scrolling text animation */
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+.social-links a:hover {
+  color: #FFD000; 
 }
+
 .scrolling-text {
-  background-color: rgb(145, 40, 40);
-  color: rgb(255, 255, 255);
-  padding: 64px;
-  text-align: center;
-  white-space: nowrap; /* Use "nowrap" to prevent wrapping */
+  height: 40px; 
   overflow: hidden;
-  position: relative; /* Position relative for absolute positioning of inner div */
-  width: 100%; /* Full width */
-  font-size: 64px; /* Set a font size for better readability */
+  margin-top: 20px;
+  background-color: rgba(20, 15, 40, 0.6); 
+  border-radius: 8px;
 }
 
 .scrolling-text div {
-  position: absolute; /* Absolute positioning to move text across */
-  width: 200%; /* Double the width to ensure continuous scrolling */
-  animation: marquee 20s linear infinite;
+  font-size: 1.2em;
+  line-height: 40px; 
+  animation: scrollingText 15s linear infinite; 
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0); } /* Start at the left edge */
-  100% { transform: translateX(-50%); } /* Scroll to the left by half the width */
+@keyframes scrollingText {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); } 
 }
