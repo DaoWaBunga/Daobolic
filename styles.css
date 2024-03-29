@@ -1,3 +1,51 @@
+main {
+  min-height: calc(100vh - 100px); /* Adjust for header/footer heights */ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 20px; /* Increased padding from 20px to 80px on top */
+}
+
+h1 {
+  margin-top: 60px; /* Add a top margin */
+}  
+
+/* Header and Navigation Styles */
+header {
+  background-color: #000000; /* Dark header background */
+  color: #ffffff;            /* White text */
+  position: fixed;           /* Key property to make it static */
+  top: 0;                    /* Position at the top */
+  left: 0;                   /* Span the full width */
+  width: 100%; 
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  z-index: 10;               /* Ensure header is always on top */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;  
+}
+
+nav li {
+  display: inline-block; 
+  margin: 0 10px; 
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px; 
+  transition: color 0.3s ease; 
+}
+
+nav a:hover {
+  color: #f00707;  /* Highlight on hover */
+}
+
 body {
   background-color: #151226; /* Deep cosmic background */
   background-image: url('img/background.png'); /* If you still want a background image */
@@ -85,6 +133,49 @@ body {
 .gif-container img {
   max-width: 100%; 
   height: auto;
+}
+
+body { /* Reuse body styles for consistent background */
+  background-color: #151226; 
+  background-image: url('../img/background.png'); 
+  background-repeat: repeat; 
+  background-size: cover; 
+  font-family: 'Avenir Next', sans-serif; 
+  color: #f5f0ff; 
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: calc(100vh - 100px);  /* Adjust for header/footer heights */ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.info-section, .image-section {
+  width: 80%; 
+  margin-bottom: 20px;
+  text-align: center; /* Center the links horizontally */
+}
+
+.info-container, .image-info-container {
+  background-color: rgba(81, 77, 97, 0.7); /* Semi-transparent */
+  font-size: 24px; /* Increase button font size */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.image-container {
+  margin-bottom: 10px;
+}
+
+.image-container img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 10px;
 }
 
 .social-links {
